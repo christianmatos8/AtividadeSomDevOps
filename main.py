@@ -1,8 +1,8 @@
 import random
 
 categorias = ["Mago", "Guerreiro", "Paladino", "Elfo", "Bardo"]
-prefixos = ["Zan", "Mor", "El", "Thar", "Gal",]
-sufixos = ["dor", "ion", "mir", "thas", "wyn",]
+prefixos = ["Zan", "Mor", "El", "Thar", "Gal","No","As","Gin"]
+sufixos = ["dor", "ion", "mir", "thas", "wyn","guerian","dotrix","deon"]
 
 def gerar_nome():
     return random.choice(prefixos) + random.choice(sufixos)
