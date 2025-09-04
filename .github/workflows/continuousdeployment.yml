@@ -1,0 +1,27 @@
+name: CD - Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Verificar versão do Python
+        run: python --version
+
+      - name: Executar main.py
+        run: python main.py
+
+      - name: Mostrar deploy
+        run: echo "Deploy realizado com sucesso!"
