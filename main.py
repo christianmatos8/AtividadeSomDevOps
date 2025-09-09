@@ -1,4 +1,5 @@
 import random
+from fastapi import FastAPI
 
 categorias = ["Mago", "Guerreiro", "Paladino", "Elfo", "Bardo"]
 prefixos = ["Zan", "Mor", "El", "Thar", "Gal","No","As","Gin"]
@@ -9,6 +10,20 @@ def gerar_nome():
 
 def escolher_categoria():
     return random.choice(categorias)
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Olá!"}
+
+@app.get("/nome")
+def nome_fantastico():
+    return {"nome": gerar_nome()}
+
+@app.get("/categoria")
+def categoria_aleatoria():
+    return {"categoria": escolher_categoria()}
 
 def main():
     print("Seu nome fantástico é:", gerar_nome())
