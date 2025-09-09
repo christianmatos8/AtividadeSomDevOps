@@ -1,3 +1,4 @@
+#arquivo docker
 FROM python:3.10
 
 WORKDIR /usr/src/app
