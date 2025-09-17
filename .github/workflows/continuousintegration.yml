@@ -30,3 +30,17 @@ jobs:
     - name: Testar execução do main.py
       run: python main.py
 #teste
+    - name: Discord Webhook
+
+      on: [ push ]
+
+      jobs:
+      notify:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Enviar alerta para o Discord
+            uses: johnnyhuy/actions-discord-git-webhook@main
+            with:
+              webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
