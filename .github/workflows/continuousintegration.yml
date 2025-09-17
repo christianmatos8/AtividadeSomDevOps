@@ -29,12 +29,4 @@ jobs:
 
     - name: Testar execução do main.py
       run: python main.py
-
-    - name: Enviar alerta para o Discord
-      if: always()
-      run: |
-        STATUS="${{ job.status }}"
-        curl -H "Content-Type: application/json" \
-        -X POST \
-        -d "{\"content\": \"CI/CD executado: $STATUS\"}" \
-        ${{ secrets.DISCORD_WEBHOOK }}
+#teste
