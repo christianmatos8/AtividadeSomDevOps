@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b78282-948d-481d-80b3-a3519b1c1e33" name="Changes" comment="" />
+    <list default="true" id="d8b78282-948d-481d-80b3-a3519b1c1e33" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/continuousintegration.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/continuousintegration.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
     "Docker.Dockerfile.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dockerfile-av",
+    "git-widget-placeholder": "discord-integration",
     "last_opened_file_path": "C:/Users/christian/OneDrive/Documentos/GitHub/AtividadeSomDevOps/venv",
     "settings.editor.selected.configurable": "configurable.group.appearance"
   }
