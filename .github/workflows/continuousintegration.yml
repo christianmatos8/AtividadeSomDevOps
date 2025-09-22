@@ -30,7 +30,7 @@ jobs:
 
 
     - name: Rodar testes com pytest
-      run: pytest tests/ --doctest-modules --junitxml=junit/test-results.xml --cov=src --cov-report=term-missing
+      run: pytest test/ --doctest-modules --junitxml=junit/test-results.xml --cov=src --cov-report=term-missing
 
 
     - name: Testar execução do main.py
