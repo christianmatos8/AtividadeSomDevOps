@@ -34,4 +34,4 @@ jobs:
 
 
     - name: Testar execução do main.py
-      run: python main.py
+      run: python src/main.py
