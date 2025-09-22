@@ -27,3 +27,4 @@ def test_endpoint_categoria():
     data = client.get("/categoria").json()
     assert "categoria" in data
     assert data["categoria"] in categorias
+#teste 
